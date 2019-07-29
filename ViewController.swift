@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             correctAnswer = numberOne + numberTwo
         } else if problemOperation == 1 {
             //subtraction problem
-            numberOne = Int.random(in: 50...100)
+            numberOne = Int.random(in: 50...99)
             numberTwo = Int.random(in: 5...40)
             correctAnswer = numberOne - numberTwo
         } else if problemOperation == 2 {
@@ -163,6 +163,8 @@ class ViewController: UIViewController {
         option.setBackgroundColor(color: UIColor.red, forState: .normal)
         disableButtons()
     }
+    
+    
     
     func disableButtons () {
         optionOneButton.isEnabled = false
